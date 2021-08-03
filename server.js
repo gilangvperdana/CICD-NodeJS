@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const {greeting} = require('./user')
 
-app.get('/Hello', (req,res) => res.send('Hello, Indonesia!'))
+app.get('/hello', (req,res) => res.send('Hello, indonesia!'))
 app.get('/', (req,res) => res.send('This App is running properly!'))
 app.get('/ping', (req,res) => res.send('Pong!'))
 app.get('/hello/:name', (req,res) => {
